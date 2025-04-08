@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import profilePhoto from '/home/rahul-patnaik/Workspace/Portfolio/src/assets/imageself.jpg';
+import profilePhoto from '../assets/imageself.jpg';
+
 
 // Component for skill badge
 const SkillBadge = ({ skill }) => (
