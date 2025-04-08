@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import profilePhoto from '/home/rahul-patnaik/Workspace/Portfolio/src/assets/imageself.jpg';
 
 // Component for skill badge
 const SkillBadge = ({ skill }) => (
@@ -134,9 +135,16 @@ export default function About() {
           className="md:col-span-1 flex flex-col items-center md:items-start"
         >
           <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-1 rounded-xl shadow-xl mb-6 w-full max-w-xs">
-            <div className="aspect-square rounded-lg bg-blue-900/50 flex items-center justify-center overflow-hidden">
-              {/* Placeholder for profile photo */}
-              <div className="text-6xl">👨‍💻</div>
+          <div className="relative w-full h-full overflow-hidden">
+              <img 
+                src={profilePhoto} 
+                alt="Rahul Patnaik" 
+                className="w-full h-full object-cover object-[center_10%]"
+                style={{ 
+                  height: '120%', // Extra 20% to allow for cropping
+                  marginTop: '-10%' // Pull image up to cut bottom
+                }}
+              />
             </div>
           </div>
           
